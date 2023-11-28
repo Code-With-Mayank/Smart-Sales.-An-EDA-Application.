@@ -3,3 +3,4 @@ Requests==2.31.0
 streamlit==1.27.1
 streamlit_lottie==0.0.5
 plotly==5.18.0
+passlib==1.7.4
