@@ -1,0 +1,12 @@
+div.block-container
+{
+    text-align: center; 
+    padding-top: 1rem; 
+    padding-bottom: 2rem; 
+    padding-left: 1rem;
+    padding-right: 0rem;
+}
+
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+header {visibility: hidden;}
