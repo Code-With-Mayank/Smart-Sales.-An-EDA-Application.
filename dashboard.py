@@ -278,7 +278,7 @@ def main():
     st.set_page_config(page_title="Smart-Sales", page_icon=":bar_chart:", layout="wide")
     st.title(" :bar_chart: :orange[-- * SMART-SALES * --] :bar_chart:")   
     st.subheader(":money_with_wings: :violet[Where Data Meets Destiny] :money_with_wings:")
-    image = Image.open(r"\smart sales logos.jpeg")
+    image = Image.open(r"smart sales logos.jpeg")
     st.sidebar.image(image, caption='ANALYZE - VISUALIZE - GENERATE',use_column_width="always")    
     st.markdown('<style>div.block-container{padding-top:0 rem;}</style>',unsafe_allow_html=True)
     
