@@ -5,3 +5,5 @@ plotly
 streamlit-lottie
 passlib
 pdfkit
+jinja2
+pillow
