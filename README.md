@@ -54,6 +54,8 @@
     <a href="https://smart-sales-eda-application.streamlit.app/">👉Click Here 👈</a>
 </div>
 
+<h4> A Sample dataset is also uploaded with name as Superstore.csv for reference to test the application.</h4>
+
 <h2> DEMONTRATION VIDEO 🎥 </h2>
 <div class="links"> 
     <a href="https://smart-sales-eda-application.streamlit.app/">👉Click Here 👈</a>
