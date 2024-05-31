@@ -14,7 +14,7 @@
     <div class="feature">
         <h3>2. Dynamic Data Exploration</h3>
         <p>Dive deep into your sales data with our powerful exploration tools. Uncover hidden patterns, identify opportunities, and understand customer behavior like never before. SMART-SALES puts the power of data exploration at your fingertips.</p>
-        <img src="https://drive.google.com/file/d/1P6_srFBzc5ygLEJ48NUyCnFiEeIuLhNJ/view?usp=drive_link" alt="Data Exploration">
+        <img src="images/Data Exploration.png" alt="Data Exploration">
     </div>
     <div class="feature">
         <h3>3. Predictive Analytics</h3>
