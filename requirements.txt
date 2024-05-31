@@ -7,3 +7,4 @@ passlib
 pdfkit
 jinja2
 pillow
+os
