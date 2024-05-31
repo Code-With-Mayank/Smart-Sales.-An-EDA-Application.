@@ -25,7 +25,7 @@ warnings.filterwarnings('ignore')
 
 # Pdfkit path configuration
 # Update the path to use the local wkhtmltopdf executable
-path_to_wkhtmltopdf = '/usr/local/bin/wkhtmltopdf'path_to_wkhtmltopdf = os.path.abspath(os.path.join(os.path.dirname(__file__), 'bin', 'wkhtmltopdf.exe'))
+path_to_wkhtmltopdf = os.path.abspath(os.path.join(os.path.dirname(__file__), 'bin', 'wkhtmltopdf.exe'))
 config = pdfkit.configuration(wkhtmltopdf=path_to_wkhtmltopdf)
 
 #Database setup
