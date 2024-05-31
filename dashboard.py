@@ -505,16 +505,11 @@ def main():
     st.set_page_config(page_title="Smart-Sales", page_icon=":bar_chart:", layout="wide")
     st.title(" :bar_chart: :orange[-- * SMART-SALES * --] :bar_chart:")   
     st.subheader(":money_with_wings: :violet[Where Data Meets Destiny] :money_with_wings:")
-
-     # Use a relative path to open the image
-    image_path = os.path.join(os.path.dirname(__file__), 'images', 'smart_sales_logo.jpeg') 
-    if os.path.exists(image_path):
-        image = Image.open(image_path)
-        st.sidebar.image(image, caption='ANALYZE - VISUALIZE - GENERATE', use_column_width="always")
-    else:
-        st.error(f"Image not found at {image_path}")
+    image = Image.open(r"C:\Users\MAYANK JHA\OneDrive\Desktop\FINAL YEAR PROJECT\Final Year Project\images\smart_sales_ logo.jpeg")
+    st.sidebar.image(image, caption='ANALYZE - VISUALIZE - GENERATE',use_column_width="always")    
+    st.markdown('<style>div.block-container{padding-top:0 rem;}</style>',unsafe_allow_html=True)
     
-    st.markdown('<style>div.block-container{padding-top:0 rem;}</style>', unsafe_allow_html=True)
+
     
     #----- PATH SETINGS ----------------#
     current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
