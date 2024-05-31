@@ -9,7 +9,7 @@
     <div class="feature">
         <h3>1. Intuitive Dashboard</h3>
         <p>Our user-friendly dashboard provides a real-time snapshot of your sales performance. Visualize key metrics, track trends, and gain insights at a glance. SMART-SALES ensures you are always in control, allowing you to make data-driven decisions effortlessly.</p>
-        <img src="https://drive.google.com/file/d/16aL14GzWaLFPsjYlyhLMWotM62ZieOLZ/view?usp=drive_link" alt="Dashboard Image">
+        <img src="images/Dashboard.png" alt="Dashboard Image">
     </div>
     <div class="feature">
         <h3>2. Dynamic Data Exploration</h3>
@@ -19,7 +19,7 @@
     <div class="feature">
         <h3>3. Predictive Analytics</h3>
         <p>Stay ahead of the curve with our advanced predictive analytics. Anticipate market trends, forecast sales, and optimize your strategies for maximum impact. SMART-SALES doesn't just show you where you've been; it guides you to where you want to go.</p>
-        <img src="https://drive.google.com/file/d/1pjRVUJG9jL5Y0tgoFW3EgP7IcdpB_It6/view?usp=drive_link" alt="Predictive Analytics">
+        <img src="images/Predictive Analysis.png" alt="Predictive Analytics">
     </div>
 </div>
 
