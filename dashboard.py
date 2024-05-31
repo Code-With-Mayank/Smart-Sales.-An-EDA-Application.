@@ -422,7 +422,7 @@ def dashboard():
                     image_paths.append(save_path)
 
                 # Generate HTML content
-                html_content = create_report_html(image_paths,)
+                html_content = create_report_html(image_paths)
                 
                 # Save HTML to a temporary file
                 html_file = base_path / "report.html"
@@ -433,11 +433,12 @@ def dashboard():
                 pdf_path = base_path / "Report.pdf"
                 pdfkit.from_file(str(html_file), str(pdf_path), configuration=config, options={'enable-local-file-access': None})
 
-                # Read PDF and provide it for download
-                with open(pdf_path, "rb") as f:
-                    pdf_data = f.read()
+                with open(os.path.join(temp_dir, "Report.pdf"), "rb") as pdf_file:
+                    base64_pdf = base64.b64encode(pdf_file.read()).decode('utf-8')
+                    pdf_display = f'<embed src="data:application/pdf;base64,{base64_pdf}" width="800" height="400" type="application/pdf">'
+                    st.markdown(pdf_display, unsafe_allow_html=True)
 
-                st.download_button(label="Download Report:inbox_tray:", data=pdf_data, file_name="Sales_Report.pdf", mime="application/pdf")
+                st.download_button(label="Download Report :inbox_tray:", data=pdf_file, file_name="Sales_Report.pdf", mime="application/octet-stream")
 
 
      # ============================ VIEW AND DOWNLOAD FULL DATASET ======================================== #
