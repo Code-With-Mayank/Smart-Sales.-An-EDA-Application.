@@ -8,3 +8,4 @@ pdfkit
 jinja2
 pillow
 matplotlib
+kaleido
