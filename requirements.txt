@@ -1,0 +1,7 @@
+streamlit
+scikit-learn
+pandas
+plotly
+streamlit-lottie
+passlib
+pdfkit
