@@ -48,10 +48,15 @@
     </div>
 </div>
 
-<h2 class="center">🔗 Links</h2>
+<h3 class="center">🔗 Links</h3>
+<h2> DEPLOYED LINK </h2>
 <div class="links">
-    <a href="link_to_deployed_app">Deployed Application</a>
-    <a href="link_to_demo_video">Demonstration Video</a>
+    <a href="https://smart-sales-eda-application.streamlit.app/">👉Click Here 👈</a>
+</div>
+
+<h2> DEMONTRATION VIDEO 📊</h2>
+<div class="links"> 
+    <a href="https://smart-sales-eda-application.streamlit.app/">👉Click Here 👈</a>
 </div>
 
 <footer>
