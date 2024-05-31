@@ -506,14 +506,15 @@ def main():
     st.title(" :bar_chart: :orange[-- * SMART-SALES * --] :bar_chart:")   
     st.subheader(":money_with_wings: :violet[Where Data Meets Destiny] :money_with_wings:")
 
-    # Use a relative path to open the image
-    image_path = os.path.join(os.path.dirname(__file__), 'images', 'smart_sales_logo')
-    image = Image.open(image_path)
-    st.sidebar.image(image, caption='ANALYZE - VISUALIZE - GENERATE', use_column_width="always")
-
+     # Use a relative path to open the image
+    image_path = os.path.join(os.path.dirname(__file__), 'images', 'smart_sales_logo.jpg') # Ensure correct file extension
+    if os.path.exists(image_path):
+        image = Image.open(image_path)
+        st.sidebar.image(image, caption='ANALYZE - VISUALIZE - GENERATE', use_column_width="always")
+    else:
+        st.error(f"Image not found at {image_path}")
     
     st.markdown('<style>div.block-container{padding-top:0 rem;}</style>', unsafe_allow_html=True)
-
     
     #----- PATH SETINGS ----------------#
     current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
