@@ -26,6 +26,11 @@ warnings.filterwarnings('ignore')
 # Pdfkit path configuration
 # Update the path to use the local wkhtmltopdf executable
 path_to_wkhtmltopdf = os.path.abspath(os.path.join(os.path.dirname(__file__), 'bin', 'wkhtmltopdf.exe'))
+
+# Debug information
+print(f'Path to wkhtmltopdf: {path_to_wkhtmltopdf}')
+print(f'File exists: {os.path.isfile(path_to_wkhtmltopdf)}')
+
 config = pdfkit.configuration(wkhtmltopdf=path_to_wkhtmltopdf)
 
 #Database setup
@@ -417,7 +422,7 @@ def dashboard():
                     image_paths.append(save_path)
 
                 # Generate HTML content
-                html_content = create_report_html(image_paths)
+                html_content = create_report_html(image_paths,)
                 
                 # Save HTML to a temporary file
                 html_file = base_path / "report.html"
@@ -428,12 +433,11 @@ def dashboard():
                 pdf_path = base_path / "Report.pdf"
                 pdfkit.from_file(str(html_file), str(pdf_path), configuration=config, options={'enable-local-file-access': None})
 
-            # Encode the PDF to base64 to download
-                with open(pdf_path, 'rb') as f:
+                # Read PDF and provide it for download
+                with open(pdf_path, "rb") as f:
                     pdf_data = f.read()
-                    b64_pdf = base64.b64encode(pdf_data).decode('utf-8')
-                    pdf_link = f'<a href="data:application/octet-stream;base64,{b64_pdf}" download="Report.pdf">Download Report</a>'
-                    st.markdown(pdf_link, unsafe_allow_html=True)
+
+                st.download_button(label="Download Report:inbox_tray:", data=pdf_data, file_name="Sales_Report.pdf", mime="application/pdf")
 
 
      # ============================ VIEW AND DOWNLOAD FULL DATASET ======================================== #
