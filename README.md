@@ -49,19 +49,19 @@
 </div>
 
 <h3 class="center">🔗 Links</h3>
-<h2> DEPLOYED LINK </h2>
+<h2> DEPLOYED LINK 📊 </h2>
 <div class="links">
     <a href="https://smart-sales-eda-application.streamlit.app/">👉Click Here 👈</a>
 </div>
 
-<h2> DEMONTRATION VIDEO 📊</h2>
+<h2> DEMONTRATION VIDEO 🎥 </h2>
 <div class="links"> 
     <a href="https://smart-sales-eda-application.streamlit.app/">👉Click Here 👈</a>
 </div>
 
 <footer>
     <p>This project is licensed under the MIT License - see the <a href="LICENSE">LICENSE</a> file for details.</p>
-    <p>If you have any questions, feel free to reach out at <a href="mailto:your_email@example.com">your_email@example.com</a>.</p>
+    <p>If you have any questions, feel free to reach out at <a href="jhamayank043@gmail.com">your_email@example.com</a>.</p>
 </footer>
 
 </body>
