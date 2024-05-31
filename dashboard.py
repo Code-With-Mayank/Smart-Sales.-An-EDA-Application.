@@ -507,10 +507,9 @@ def main():
     st.title(" :bar_chart: :orange[-- * SMART-SALES * --] :bar_chart:")   
     st.subheader(":money_with_wings: :violet[Where Data Meets Destiny] :money_with_wings:")
     # Use a relative path to open the image
-    image_path = os.path.join(os.path.dirname(__file__), 'images', 'smart_sales_logos.jpeg')
+    image_path = os.path.join(os.path.dirname(__file__), 'images', 'smart_sale_logos.jpeg')
     if os.path.exists(image_path):
         image = Image.open(image_path)
-        st.image(image, caption='Smart Sales Logo')
     else:
         st.error(f"Image not found at {image_path}")
     st.sidebar.image(image, caption='ANALYZE - VISUALIZE - GENERATE',use_column_width="always")    
