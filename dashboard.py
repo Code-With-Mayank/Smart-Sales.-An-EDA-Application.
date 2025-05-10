@@ -506,7 +506,7 @@ def main():
     st.title(" :bar_chart: :orange[-- * SMART-SALES * --] :bar_chart:")   
     st.subheader(":money_with_wings: :violet[Where Data Meets Destiny] :money_with_wings:")
     image = Image.open("images/smart_sales_ logo.jpeg")
-    st.sidebar.image(image, caption='ANALYZE - VISUALIZE - GENERATE',use_column_width="always")    
+    st.sidebar.image(image, caption='ANALYZE - VISUALIZE - GENERATE',use_container_width="always")    
     st.markdown('<style>div.block-container{padding-top:0 rem;}</style>',unsafe_allow_html=True)
     
 
